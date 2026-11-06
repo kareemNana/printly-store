@@ -1,62 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Printly — thoughtfully designed printable calendars and planners.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Printly | Printable Calendars & Planners</title>
+<meta name="description" content="Thoughtfully designed printable calendars and planners from Printly.">
 <style>
 :root{--ink:#252720;--muted:#70736a;--cream:#f7f4ed;--paper:#fffefa;--sage:#a8b6a0;--sage-dark:#65745f;--terra:#c78368;--line:#e6e1d7}
-*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
-header{padding:24px 0;border-bottom:1px solid var(--line);background:rgba(255,254,250,.75)}
-.nav{display:flex;align-items:center;justify-content:space-between}.brand{font-family:Georgia,serif;font-size:29px;letter-spacing:2px;font-weight:bold}.nav small{color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-size:10px}
-.hero{padding:68px 0 56px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-.kicker{color:var(--sage-dark);font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:bold}
-h1{font:clamp(42px,6vw,68px)/1.04 Georgia,serif;letter-spacing:-1.8px;margin:16px 0}
-.hero p{max-width:470px;color:var(--muted);font-size:16px}
-.btn{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:13px 22px;border-radius:3px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;margin-top:16px;transition:.2s}
-.btn:hover{background:var(--sage-dark);transform:translateY(-1px)}
-.preview{background:linear-gradient(145deg,#e7e8dd,#d7dfd1);padding:28px;border-radius:5px;position:relative;min-height:310px;display:flex;align-items:center;justify-content:center}
-.sheet{background:var(--paper);width:76%;padding:22px;box-shadow:0 15px 40px #34382a20;transform:rotate(2deg)}
-.sheet-top{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:10px;font:22px Georgia,serif}
-.mini-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;margin-top:15px}
-.mini-grid span{height:25px;background:#f0eee7;border-radius:2px}.mini-grid span:nth-child(3n){background:#dce4d7}.mini-grid span:nth-child(7n){background:#f0dcd2}
-.note{position:absolute;bottom:16px;right:20px;font:italic 13px Georgia,serif;color:#56634f}
-section.products{padding:28px 0 76px}
-.section-head{text-align:center;margin-bottom:30px}.section-head h2{font:36px Georgia,serif;margin:8px 0}.section-head p{color:var(--muted);margin:0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:var(--paper);border:1px solid var(--line);padding:18px;border-radius:4px;display:flex;flex-direction:column}
-.art{height:190px;padding:20px;display:flex;align-items:center;justify-content:center;background:#e7e9df;margin-bottom:17px}
-.art.terra{background:#f0e0d7}.art.beige{background:#eae3d5}
-.paper{background:#fffefa;width:78%;height:100%;padding:14px;box-shadow:0 8px 20px #3332}
-.paper h3{font:19px Georgia,serif;text-align:center;margin:4px 0 12px}
-.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.calendar i{height:13px;background:#e7e8df}.calendar i:nth-child(4n){background:#d1ddca}.calendar i:nth-child(7n){background:#e9cfc1}
-.card h3{font:23px Georgia,serif;margin:0 0 5px}.desc{font-size:13px;color:var(--muted);min-height:42px;margin:0 0 12px}.price{font-weight:bold;font-size:18px;margin-top:auto}.card .btn{display:block;text-align:center;margin-top:13px}
-.tag{display:inline-block;color:var(--sage-dark);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
-.how{background:#e8e9df;padding:38px 0;text-align:center}.how h2{font:30px Georgia,serif;margin:0 0 8px}.how p{color:#62685d;max-width:650px;margin:0 auto}
-footer{padding:25px 0;text-align:center;color:var(--muted);font-size:12px}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding:46px 0 38px;gap:28px}.preview{min-height:260px}.cards{grid-template-columns:1fr}.card{max-width:480px;width:100%;margin:auto}.nav small{font-size:9px}}
-</style>
-</head>
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif;line-height:1.55}
+.wrap{width:min(1080px,92%);margin:auto}header{padding:22px 0;border-bottom:1px solid var(--line);background:var(--paper)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font: bold 29px Georgia,serif;letter-spacing:2px}.nav small{color:var(--muted);font-size:10px;letter-spacing:2px;text-transform:uppercase}
+.hero{padding:62px 0;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.kicker{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--sage-dark);font-weight:bold}
+h1{font:clamp(42px,6vw,66px)/1.06 Georgia,serif;margin:14px 0}p{color:var(--muted)}
+.btn{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:13px 22px;border-radius:3px;font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-top:12px}
+.btn:hover{background:var(--sage-dark)}
+.preview{min-height:285px;background:linear-gradient(145deg,#e7e8dd,#d7dfd1);display:grid;place-items:center;padding:25px;border-radius:5px}
+.sheet{background:var(--paper);width:76%;padding:22px;box-shadow:0 12px 35px #3332;transform:rotate(2deg)}
+.sheet h2{font:25px Georgia,serif;border-bottom:1px solid var(--line);padding-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.grid i{height:22px;background:#efeee8}.grid i:nth-child(3n){background:#dce4d7}.grid i:nth-child(7n){background:#f0dcd2}
+.products{padding:25px 0 65px}.heading{text-align:center;margin-bottom:28px}.heading h2{font:35px Georgia,serif;margin:8px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);padding:18px;display:flex;flex-direction:column}
+.art{height:165px;background:#e7e9df;display:grid;place-items:center;margin-bottom:15px;padding:16px}.art.terra{background:#f0e0d7}.art.beige{background:#eae3d5}
+.mini{background:white;width:76%;height:100%;padding:12px;box-shadow:0 6px 18px #3332}.mini h3{font:19px Georgia,serif;text-align:center}
+.tag{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--sage-dark)}.card h3{font:22px Georgia,serif;margin:5px 0}.desc{font-size:13px;min-height:40px}.price{font-weight:bold;font-size:18px;margin-top:auto}.card .btn{text-align:center;display:block}
+.how{background:#e8e9df;padding:38px 0;text-align:center}.how h2{font:30px Georgia,serif;margin:0 0 8px}.how p{max-width:700px;margin:0 auto}
+footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding:42px 0}.cards{grid-template-columns:1fr}.card{max-width:460px;width:100%;margin:auto}.nav small{max-width:130px;text-align:right}}
+</style></head>
 <body>
 <header><div class="wrap nav"><div class="brand">PRINTLY</div><small>Printables for a calmer everyday</small></div></header>
 <main>
 <div class="wrap hero">
-<div><div class="kicker">Plan beautifully · 2027 collection</div><h1>A little more<br>organized. A lot<br>more you.</h1><p>Thoughtfully designed printable calendars and planners to bring a little clarity to every day.</p><a class="btn" href="#shop">Explore the collection</a></div>
-<div class="preview"><div class="sheet"><div class="sheet-top"><span>January</span><span>2027</span></div><div class="mini-grid" aria-hidden="true">
-<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-</div></div><div class="note">Make space for what matters.</div></div>
+<div><div class="kicker">Plan beautifully · 2027 collection</div><h1>A little more<br>organized. A lot<br>more you.</h1>
+<p>Thoughtfully designed printable calendars and planners to bring a little clarity to every day.</p><a class="btn" href="#shop">Explore the collection</a></div>
+<div class="preview"><div class="sheet"><h2>January&nbsp; 2027</h2><div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
 </div>
-<section class="products wrap" id="shop">
-<div class="section-head"><div class="kicker">The Printly collection</div><h2>Find your way to a fresh start</h2><p>Simple, practical pages made to print at home.</p></div>
+<section class="products wrap" id="shop"><div class="heading"><div class="kicker">The Printly collection</div><h2>Find your way to a fresh start</h2><p>Simple, practical pages made to print at home.</p></div>
 <div class="cards">
-<article class="card"><div class="art"><div class="paper"><h3>Monthly Calendar</h3><div class="calendar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="tag">Everyday planning</span><h3>Minimal Monthly Calendar 2027</h3><p class="desc">A clean monthly layout with room for plans, reminders and notes.</p><div class="price">EGP 20</div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf9Cc9ySPsWQ9iMlN8pmM6tMWGmSNx56GTXbS7oO0aekiGjlQ/viewform" target="_blank" rel="noopener">Order now</a></article>
-<article class="card"><div class="art terra"><div class="paper"><h3>Study Planner</h3><div class="calendar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="tag">Focus &amp; goals</span><h3>Study Planner 2027</h3><p class="desc">Organize subjects, monthly goals and study sessions in one place.</p><div class="price">EGP 30</div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf9Cc9ySPsWQ9iMlN8pmM6tMWGmSNx56GTXbS7oO0aekiGjlQ/viewform" target="_blank" rel="noopener">Order now</a></article>
-<article class="card"><div class="art beige"><div class="paper"><h3>Year at a Glance</h3><div class="calendar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="tag">Big-picture planning</span><h3>Year at a Glance 2027</h3><p class="desc">See the whole year at once and keep important dates in view.</p><div class="price">EGP 50</div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf9Cc9ySPsWQ9iMlN8pmM6tMWGmSNx56GTXbS7oO0aekiGjlQ/viewform" target="_blank" rel="noopener">Order now</a></article>
-</div>
-</section>
-<section class="how"><div class="wrap"><h2>How ordering works</h2><p>Choose a product and tap “Order now” to fill in the Printly order form. Your order is not confirmed until a parent-managed payment has been checked and confirmed. Your printable will be sent after confirmation.</p></div></section>
-</main>
-<footer><div class="wrap">© 2027 Printly. Plan beautifully.</div></footer>
-</body></html>
+<article class="card"><div class="art"><div class="mini"><h3>Monthly Calendar</h3><div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="tag">Everyday planning</span><h3>Minimal Monthly Calendar 2027</h3><p class="desc">A clean monthly layout with room for plans, reminders and notes.</p><div class="price">EGP 20</div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf9Cc9ySPsWQ9iMlN8pmM6tMWGmSNx56GTXbS7oO0aekiGjlQ/viewform" target="_blank" rel="noopener">Order now</a></article>
+<article class="card"><div class="art terra"><div class="mini"><h3>Study Planner</h3><div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="tag">Focus &amp; goals</span><h3>Study Planner 2027</h3><p class="desc">Organize subjects, monthly goals and study sessions in one place.</p><div class="price">EGP 30</div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf9Cc9ySPsWQ9iMlN8pmM6tMWGmSNx56GTXbS7oO0aekiGjlQ/viewform" target="_blank" rel="noopener">Order now</a></article>
+<article class="card"><div class="art beige"><div class="mini"><h3>Year at a Glance</h3><div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="tag">Big-picture planning</span><h3>Year at a Glance 2027</h3><p class="desc">See the whole year at once and keep important dates in view.</p><div class="price">EGP 50</div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf9Cc9ySPsWQ9iMlN8pmM6tMWGmSNx56GTXbS7oO0aekiGjlQ/viewform" target="_blank" rel="noopener">Order now</a></article>
+</div></section>
+<section class="how"><div class="wrap"><h2>How ordering works</h2>
+<p>Choose a product and tap “Order now” to fill in the Printly order form. After you submit it, your parent-managed Printly team will contact you privately with payment instructions. Please wait for those instructions before paying. Your order is confirmed only after the payment has been checked. Your printable will then be sent to your email.</p></div></section>
+</main><footer>© 2027 Printly. Plan beautifully.</footer></body></html>
